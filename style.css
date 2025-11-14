@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+:root {
+    --bg: #ffffff;
+    --text: #222;
+    --accent: #7d8bff;
+}
+
+.dark {
+    --bg: #1a1a1a;
+    --text: #eee;
+    --accent: #7d8bff;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--accent);
+    color: white;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav .active {
+    text-decoration: underline;
+}
+
+#themeBtn {
+    border: none;
+    background: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.services {
+    padding: 40px 20px;
+}
+
+.service-card {
+    border: 2px solid var(--accent);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+.content {
+    width: 90%;
+    margin: 40px auto;
+    line-height: 1.6;
+}
+
+.dinamic {
+    font-weight: bold;
+    color: var(--accent);
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.dinamic.btn {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #ddd;
+    bottom: 0%;
+    width: 100%;
+    position: absolute;
+}
+
+.dark footer {
+    background: #222;
+    color: #ccc;
+}
+
+@media (max-width: 700px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
